@@ -69,13 +69,10 @@ void setup(void){
     OSCCONbits.SCS = 1;       // Oscilador interno
     
     
-    TRISA = 0;     // RA como salida
     TRISC = 0;     // RC como salida
     TRISDbits.TRISD0 = 0;
     TRISDbits.TRISD1 = 0;
     TRISDbits.TRISD2 = 0;
-    
-    
     INTCONbits.GIE = 1;
     PORTB = 0;
     
