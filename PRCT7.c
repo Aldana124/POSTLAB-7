@@ -37,7 +37,7 @@ int display[10] = {0b10111111, 0b10000110, 0b11011011, 0b11001111, 0b11100110, 0
 /*
  * 
  */
-void __interrupt() isr(void){
+void __interrupt() intr (void){
 
    if (INTCONbits.T0IF){
             TMR0 = 252;
@@ -97,7 +97,7 @@ void main(void) {
     centena = 0;
     decena = 0;
     unidad = 0;
-    valor = 999;
+    valor = 420;
     setup();
     while(1)
     {
